@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #1f2029;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.video-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;  
+}
+
+video {
+    width: 100%;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.playlist {
+    width: 40%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto;  /* Habilita a rolagem vertical */
+    max-height: 500px;  
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #555;
+    animation: movimento 1s ease-in-out infinite;
+    box-shadow: 10px 12px 40px #f1af097a;
+}
+
+@keyframes movimento {
+    0% {
+        transform: translate(0, 0); /* Posição original */
+    }
+    50% {
+        transform: translate(-5px, -5px); /* Posição de ida */
+    }
+    100% {
+        transform: translate(0, 0); /* Retorna para a posição original */
+    }
+}
+
+
+h3 {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.title-playlist{
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+}
