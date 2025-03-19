@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Tráfego Pago</title>
+    <link rel="stylesheet" href="/curso/css/index.css" />
+    <link rel="stylesheet" href="/curso/css/keyframes.css" />
+    <link rel="stylesheet" href="/curso/css/curso.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-main">
+        <div class="logo">
+          <img
+            src="/curso/img/WhatsApp_Image_2024-07-04_at_18.39.05-removebg-preview.png"
+            alt="Logo"
+          />
+        </div>
+        <section class="section-content">
+          <h1 class="title">Bem-vindo ao curso de tráfego pago</h1>
+          <h4 class="subtitle">Feito por Thauan Carlos</h4>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+            sequi rem inventore natus amet. Consectetur aliquam atque quo.
+            Quaerat quae doloribus nihil provident esse aspernatur nam at.
+          </p>
+        </section>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <!-- From Uiverse.io by satyamchaudharydev -->
+          <button id="card-button">
+            Clique Aqui
+            <div class="arrow-wrapper" >
+              <div class="arrow"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- Área de Vídeos (ficará inicialmente oculta) -->
+      <div class="video-container" id="video-container">
+        <div class="styled-wrapper back-button" id="back-button">
+          <button class="button">
+            <div class="button-box">
+              <span class="button-elem">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-icon"
+                >
+                  <path
+                    fill="black"
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="button-elem">
+                <svg
+                  fill="black"
+                  viewBox="0 0  24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-icon"
+                >
+                  <path
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </button>
+        </div>
+
+        <div class="video-player">
+          <video id="video-player" controls>
+            <source id="video-source" src="video1.mp4" type="video/mp4" />
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+          <h3 id="video-title">Vídeo 1</h3>
+        </div>
+
+        <div class="playlist">
+          <ul>
+            <div class="container-playlist">
+              <div class="title-playlist">
+                <h3>Aula de Tráfego Pago</h3>
+              </div>
+              <li data-video="video1.mp4" data-title="Vídeo 1">Vídeo 1</li>
+              <li data-video="video2.mp4" data-title="Vídeo 2">Vídeo 2</li>
+              <li data-video="video3.mp4" data-title="Vídeo 3">Vídeo 3</li>
+              <li
+                data-video="WhatsApp Video 2025-01-14 at 16.12.41.mp4"
+                data-title="Vídeo 100"
+              >
+                Vídeo 100
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="rodape">
+      &copy; Alfega 2024 - Todos os direitos reservados
+    </footer>
+
+    <script src="/curso/js/script.js"></script>
+    <script src="/curso/js/botao.js"></script>
+  </body>
+</html>

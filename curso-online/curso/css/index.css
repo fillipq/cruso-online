@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    background-image: url('/curso/img/modern-office-building-features-luxury-skyline-view-generated-by-ai.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.title, .subtitle{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    width: 100vh;
+}
+
+.info{
+    margin-top: 50px;
+    text-align: start;
+}
+
+.title, .subtitle {
+    overflow: hidden; /* Esconde o texto que ainda não foi digitado */
+    white-space: nowrap; /* Impede o texto de quebrar em várias linhas */
+    border-right: 4px solid #fff; /* O cursor inicialmente está invisível */
+    width: 0; /* Começa com a largura 0 */
+    text-align: center; /* Centraliza o texto */
+    display: flexbox; /* Garante que o texto seja tratado como um bloco e possa ser animado */
+}
+
+/* Animação para a primeira frase */
+.title {
+    animation: typing 2.2s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Animação para a segunda frase - começa após a primeira frase terminar */
+.subtitle {
+    animation: typing1 2.2s steps(40) 5s forwards, blink 0.75s step-end infinite;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.page-main {
+    width: 100%; /* Ajustado para a página principal ocupar 60% da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    transition: transform 1s ease-in-out;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.section-content {
+    text-align: center;
+    width: 100%;
+}
+
+.card-container {
+    height: 100%;
+    width: 30%;  /* O card agora está na página principal */
+    display: flex;
+    justify-content: flex-end; /* Alinha o card à direita */
+    text-align: center;  /* Espaço entre o conteúdo e o card */
+    transition: transform 1s ease-in-out;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    place-items: center;
+    border-radius: 40px 0px 0px 40px;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Estilo para o overlay dourado */
+.golden-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    z-index: 999; /* Para garantir que o overlay fique acima de outros elementos */
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+button {
+    --primary-color: transparent;
+    --secondary-color: #fff;
+    --hover-color: gold;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
+.rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 77%;
+    font-size: 10px;
+}
+
+/* 
+.back-button {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10%;
+    height: 100%;
+    background-color: goldenrod; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px 40px 40px 0px;
+    border: 1px solid red;
+}
+
+.back-button:hover {
+    background-color: #ff4500;  Cor de fundo ao passar o mouse 
+} 
+*/
+
+
+
+
+
